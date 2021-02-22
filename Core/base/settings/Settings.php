@@ -39,12 +39,10 @@ class Settings
     ];
     //Защищаем от создания через new
     private function __construct(){
-
     }
     //Защищаем от создания через клонировани
     private function  __clone()
     {
-
     }
 
 }
