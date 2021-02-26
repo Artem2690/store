@@ -9,7 +9,8 @@ require_once 'core/base/settings/internal_settings.php';
 use Core\base\exceptions\RoutException;
 use Core\base\controllers\RoutController;
 try {
-    RoutController::getInstance()->route();
+    //RoutController::getInstance()->route();
+    RoutController::getInstance();
 }catch (RoutException $e){
     exit($e->getMessage());
 }

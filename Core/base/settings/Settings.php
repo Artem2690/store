@@ -44,5 +44,17 @@ class Settings
     private function  __clone()
     {
     }
+    //Метод для возвращения свойств routes
+    static public function get($property){
+        return self::$_instance->$property;
+
+    }
+
+    static public function instance(){
+        if(self::$_instance instanceof self){
+            return self::$_instance;
+        } return self::$_instance = new self;
+    }
+
 
 }
